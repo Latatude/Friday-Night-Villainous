@@ -1,0 +1,172 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "Later that same night..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "A big blue bear and a lanky man with a paper bag on his head sneak into BF & GF's room."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "Girlfriend remained hidden as the two\\nstrangers kidnapped Boyfriend, who was fast alseep."
+		},
+		{
+			"sound": "",
+			"speed": 0.015,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "Once they left, she demoned up and followed the two to their hat-shaped ship, where she stayed hidden on the outside."
+		},
+		{
+			"sound": "",
+			"speed": 0.00500000000000001,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "Once the ship landed and the two went inside a hat-shaped mansion, Girlfriend stayed behind the shadows as she followed."
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "The duo entered what looks like a laboratory, where the bear tied Boyfriend to a chair."
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "Once the two figures left the lab, Girlfriend came to cut her boyfriend free."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "\"BA!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "\"I'm happy to see you too...\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "Girlfriend summons her speakers and hops onto them."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"We should rest up before going back home...\""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Bee...\""
+		},
+		{
+			"sound": "",
+			"speed": 0.33,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": ".   .   .   .   .   .   .   .   .   .   .   ."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "The next morning..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "The bear, named 5.0.5., came into the lab with a vacuum cleaner and wearing a maid outfit."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "The sound of the vacuum woke the couple, who immediately began staring in adoration at 5.0.5."
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "505",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "*Roars questioningly*"
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "*Holding out his mic* \"Bah?\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "505",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "\"Ooh? *roars excitedly*\""
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "static",
+			"text": "5.0.5. nods rapidly, accepting Boyfriend's offer to play."
+		},
+		{
+			"sound": "",
+			"speed": 0,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "\"AY!\""
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"dialogue": [
+		{
+			"expression": "static",
+			"text": "In his home office, Daddy Dearest holds a business card for the\\nBlack Hat Organization.",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "lat"
+		},
+		{
+			"expression": "talk",
+			"text": "\"Hmm... Maybe they can help.\"",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dad"
+		},
+		{
+			"expression": "static",
+			"text": "As he dials the number on the card, Girlfriend walks by his office, overhearing the call.",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "lat"
+		},
+		{
+			"expression": "confused",
+			"text": "*thinks* What's he up to now?",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf"
+		}
+	]
+}

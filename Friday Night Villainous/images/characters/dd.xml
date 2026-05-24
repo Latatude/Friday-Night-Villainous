@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="dd.png">
+<SubTexture name="dd down0000" x="2004" y="8600" width="2014" height="1904" frameX="-57" frameY="-672" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd down0001" x="0" y="8600" width="2004" height="1914" frameX="-64" frameY="-662" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd down0002" x="9938" y="0" width="1993" height="1935" frameX="-71" frameY="-641" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0000" x="6098" y="6495" width="1988" height="2088" frameX="-64" frameY="-488" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0001" x="2037" y="6495" width="1988" height="2103" frameX="-67" frameY="-473" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0002" x="7951" y="0" width="1987" height="2107" frameX="-68" frameY="-469" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0003" x="4018" y="4382" width="1987" height="2111" frameX="-68" frameY="-465" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0004" x="0" y="4382" width="1987" height="2113" frameX="-69" frameY="-463" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0005" x="5926" y="2117" width="1986" height="2116" frameX="-70" frameY="-460" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0006" x="0" y="2264" width="1985" height="2118" frameX="-71" frameY="-458" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd idle0007" x="4018" y="4382" width="1987" height="2111" frameX="-68" frameY="-465" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd left0000" x="0" y="6495" width="2037" height="2105" frameX="-19" frameY="-471" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd left0001" x="1987" y="4382" width="2031" height="2112" frameX="-25" frameY="-464" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd left0002" x="5926" y="0" width="2025" height="2117" frameX="-31" frameY="-459" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd right0000" x="4025" y="6495" width="2073" height="2096" frameX="0" frameY="-480" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd right0001" x="3949" y="2264" width="1942" height="2112" frameX="-125" frameY="-465" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd right0002" x="1985" y="2264" width="1964" height="2118" frameX="-99" frameY="-459" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd up0000" x="0" y="0" width="1992" height="2264" frameX="-71" frameY="-312" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd up0001" x="1992" y="0" width="1976" height="2247" frameX="-79" frameY="-329" frameWidth="2200" frameHeight="2893" />
+<SubTexture name="dd up0002" x="3968" y="0" width="1958" height="2229" frameX="-89" frameY="-347" frameWidth="2200" frameHeight="2893" />
+</TextureAtlas>

@@ -1,0 +1,108 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "\"HEY!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "505",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "*Roars joyfully!*"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"That was so much fun!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.025,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "5.0.5. claps excitedly. Wanting to play more, he gestures for the couple to wait for him."
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "He goes to his room to change out of his maid outfit, catching the attention of the bag-headed man, Dr. Flug."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "flug",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "\"Huh?\""
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Going over his morning checklist,\\nDr. Flug noticed that 5.0.5. finished cleaning earlier than usual."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "flug",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "\"Eh.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "But he just shrugged it off and proceeded with his routine."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Back in the lab, Boyfriend and Girlfriend sat together on the speakers playing\\nRock-Paper-Scissors."
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "As 5.0.5. returns, Boyfriend wins the game, becoming cocky."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "5.0.5. happily sits in his spot, tail wagging while Boyfriend hops off the speakers."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "After Boyfriend returns to his spot, he notices that 5.0.5. is standing with a toy microphone in his paws, eager to play again."
+		}
+	]
+}

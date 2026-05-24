@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [101, 7],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "flug left"
+		},
+		{
+			"offsets": [92, 70],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "flug down"
+		},
+		{
+			"offsets": [80, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "flug up"
+		},
+		{
+			"offsets": [100, 50],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "flug right"
+		},
+		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "flug idle"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/flug phone",
+	"position": [-950, -780],
+	"healthicon": "flugcall",
+	"flip_x": false,
+	"healthbar_colors": [13, 10, 4],
+	"camera_position": [610, 730],
+	"sing_duration": 4,
+	"scale": 0.4,
+	"_editor_isPlayer": false
+}

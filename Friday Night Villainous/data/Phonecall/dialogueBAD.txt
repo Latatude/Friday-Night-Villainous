@@ -1,0 +1,22 @@
+preSong = true;
+postSong = true;
+
+function onStartCountdown()
+    if preSong and isStoryMode and not seenCutscene then
+            startDialogue('dialogue1.json', 'phonecall');
+            preSong = false;
+            return Function_Stop;
+        end
+    end
+    return Function_Continue;
+end
+
+function onEndSong()
+    if postSong and isStoryMode then
+            startDialogue('dialogue2.json', 'phonecall');
+            postSong = false;
+            return Function_Stop;
+        end
+    end
+    return Function_Continue;
+end

@@ -1,0 +1,100 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"That was so much fun! Right, BF?\""
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "5.0.5. nods happily and Boyfriend gives a thumbs-up while smiling."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "\"Yeah!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Girlfriend leans toward BF's ear."
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "*Whispers* \"We should probably get back home now.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Boyfriend nods affirmatively and smirks. He turns to 5.0.5. and waves, smiling\\nintimately."
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "5.0.5. smiles and waves back to the couple."
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Bye fella; it was nice to meet you. We had so much fun!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "505",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "*Roars happily*"
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "The couple proceed to the exit, but are stopped halfway through."
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Dr. Flug emerges from the shadows with his arms crossed, blocking their path."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "flug",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "\"Ahem.\""
+		}
+	]
+}

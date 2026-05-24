@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="flug.png">
+<SubTexture name="flug down0000" x="7857" y="3406" width="1626" height="1679" frameX="-353" frameY="-523" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug down0001" x="7857" y="0" width="1689" height="1710" frameX="-280" frameY="-485" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug down0002" x="0" y="5466" width="1770" height="1741" frameX="-215" frameY="-447" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0000" x="1770" y="5466" width="1471" height="1726" frameX="-263" frameY="-310" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0001" x="7857" y="1710" width="1490" height="1696" frameX="-271" frameY="-340" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0002" x="6177" y="5466" width="1472" height="1711" frameX="-267" frameY="-325" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0003" x="4710" y="5466" width="1467" height="1717" frameX="-265" frameY="-319" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0004" x="3241" y="5466" width="1469" height="1723" frameX="-264" frameY="-313" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0005" x="1770" y="5466" width="1471" height="1726" frameX="-263" frameY="-310" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0006" x="6191" y="3479" width="1472" height="1730" frameX="-262" frameY="-307" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0007" x="6191" y="1743" width="1473" height="1736" frameX="-262" frameY="-301" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0008" x="3453" y="3699" width="1473" height="1744" frameX="-262" frameY="-293" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug idle0009" x="4545" y="1791" width="1473" height="1751" frameX="-262" frameY="-286" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug left0000" x="0" y="3699" width="1746" height="1767" frameX="-184" frameY="-286" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug left0001" x="1746" y="3699" width="1707" height="1749" frameX="-218" frameY="-305" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug left0002" x="6191" y="0" width="1666" height="1743" frameX="-252" frameY="-311" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug right0000" x="0" y="0" width="1491" height="1867" frameX="-609" frameY="-307" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug right0001" x="1491" y="0" width="1502" height="1857" frameX="-598" frameY="-312" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug right0002" x="2993" y="0" width="1552" height="1846" frameX="-548" frameY="-319" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug up0000" x="1632" y="1867" width="1644" height="1831" frameX="-378" frameY="-174" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug up0001" x="0" y="1867" width="1632" height="1832" frameX="-383" frameY="-187" frameWidth="2100" frameHeight="2500" />
+<SubTexture name="flug up0002" x="4545" y="0" width="1646" height="1791" frameX="-387" frameY="-241" frameWidth="2100" frameHeight="2500" />
+</TextureAtlas>

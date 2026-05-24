@@ -1,0 +1,9 @@
+{
+	"name": "Villainous",
+	"description": "Demo",
+	"restart":true,
+	"runsGlobally": false,
+	"color": [111,69,71],
+	"discordRPC": "863222024192262205",
+	"iconFramerate": 10
+}

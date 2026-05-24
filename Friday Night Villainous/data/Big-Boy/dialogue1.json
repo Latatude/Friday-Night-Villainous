@@ -1,0 +1,180 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.02,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "\"Ay!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "505",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "*Wimpers and starts to bawl.*"
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "BF went too hard on 5.0.5. and the poor bear started to cry!"
+		},
+		{
+			"sound": "",
+			"speed": 0.02,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "shocked",
+			"text": "\"Aaa!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "He tries to sing a lullaby to calm down 5.0.5. so they don't get caught, but fails miserably."
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "A small robot butler comes wheeling into the room to pacify the bear."
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "But Girlfriend casually snaps her fingers and the robot explodes, spooking 5.0.5."
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "*Rolls eyes and sighs* \"Here, let ME try.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "She hops off her speakers and calmly\\napproaches 5.0.5."
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "In a surprisingly motherly tone, GF reassured the bear."
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Hey, it's okay. We're just playing a little game, big guy. You did your best, and that's what counts the most, right?\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "5.0.5. sniffles and wipes away his tears."
+		},
+		{
+			"sound": "",
+			"speed": 0.06,
+			"portrait": "505",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "*Nodding slowly* \"Uh-huh.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Then there's no need to worry about who won or lost. It's just for fun, remember?\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "5.0.5. suddenly perked right up."
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "505",
+			"boxState": "angry",
+			"expression": "pissed",
+			"text": "*Nods rapidly* \"Uh-huh, uh-huh!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"There ya go, all better now!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Boyfriend was dumbfounded by how well his girlfriend handled the situation."
+		},
+		{
+			"sound": "",
+			"speed": 0.15,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "\" W o a h . \""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "5.0.5. jumps to his feet and gestures\\nBoyfriend to give him a big boy microphone."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "\"Yeah!\""
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Boyfriend tosses a mic to the bear, who catches it with excitement. After a quick dap-up, everyone returned to their places."
+		}
+	]
+}

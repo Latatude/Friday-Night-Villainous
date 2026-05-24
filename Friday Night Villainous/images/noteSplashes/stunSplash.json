@@ -1,0 +1,64 @@
+{
+	"animations": {
+		"stun_left": {
+			"offsets": [
+				27,
+				25
+			],
+			"noteData": 0,
+			"fps": [
+				22,
+				26
+			],
+			"prefix": "stun_left_",
+			"indices": [],
+			"name": "stun_left"
+		},
+		"stun_up": {
+			"offsets": [
+				32,
+				26
+			],
+			"noteData": 2,
+			"fps": [
+				22,
+				26
+			],
+			"prefix": "stun_up_",
+			"indices": [],
+			"name": "stun_up"
+		},
+		"stun_down": {
+			"offsets": [
+				30,
+				26
+			],
+			"noteData": 1,
+			"fps": [
+				22,
+				26
+			],
+			"prefix": "stun_down_",
+			"indices": [],
+			"name": "stun_down"
+		},
+		"stun_right": {
+			"offsets": [
+				29,
+				26
+			],
+			"noteData": 3,
+			"fps": [
+				22,
+				26
+			],
+			"prefix": "stun_right_",
+			"indices": [],
+			"name": "stun_right"
+		}
+	},
+	"allowRGB": false,
+	"allowPixel": false,
+	"rgb": null,
+	"scale": 0.7
+}

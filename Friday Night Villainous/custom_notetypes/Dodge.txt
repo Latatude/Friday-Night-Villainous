@@ -1,0 +1,9 @@
+function goodNoteHit(id, noteData, noteType, isSustainNote)
+
+if noteType == 'dodge'
+
+triggerEvent('Play Animation','dodge', 'bf')--Important stuff
+
+    end
+
+end

@@ -1,0 +1,50 @@
+{
+	"storyName": "Strange Place",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "lab",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"Menu_505",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Sweetpea",
+			"maid-505",
+			[
+				6,
+				153,
+				253
+			]
+		],
+		[
+			"Challenger",
+			"505",
+			[
+				6,
+				153,
+				253
+			]
+		],
+		[
+			"Big-Boy",
+			"505",
+			[
+				6,
+				153,
+				253
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week Flower",
+	"hiddenUntilUnlocked": false
+}

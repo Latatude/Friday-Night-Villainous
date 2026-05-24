@@ -1,0 +1,20 @@
+-- girlfriendStrumline.lua
+
+function onEvent(name, value)
+    if name == 'AnimateGF' then
+        animateGF(value)
+    end
+end
+
+-- Function to animate Girlfriend based on animation name
+function animateGF(animationName)
+    if animationName == 'singLEFT' then
+        characterPlayAnim('gf', 'singLEFT', true)
+    elseif animationName == 'singDOWN' then
+        characterPlayAnim('gf', 'singDOWN', true)
+    elseif animationName == 'singUP' then
+        characterPlayAnim('gf', 'singUP', true)
+    elseif animationName == 'singRIGHT' then
+        characterPlayAnim('gf', 'singRIGHT', true)
+    end
+end

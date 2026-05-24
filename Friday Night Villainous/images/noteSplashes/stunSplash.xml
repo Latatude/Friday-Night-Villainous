@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="NOTE_stunSplash.png">
+  <!-- Column 0: Left -->
+  <SubTexture name="stun_left_000" x="0" y="0" width="400" height="400"/>
+  <SubTexture name="stun_left_001" x="0" y="400" width="400" height="400"/>
+  <SubTexture name="stun_left_002" x="0" y="800" width="400" height="400"/>
+  <SubTexture name="stun_left_003" x="0" y="1200" width="400" height="400"/>
+  <SubTexture name="stun_left_004" x="0" y="1600" width="400" height="400"/>
+  <SubTexture name="stun_left_005" x="0" y="2000" width="400" height="400"/>
+  <SubTexture name="stun_left_006" x="0" y="2400" width="400" height="400"/>
+  <SubTexture name="stun_left_007" x="0" y="2800" width="400" height="400"/>
+
+  <!-- Column 1: Down -->
+  <SubTexture name="stun_down_000" x="400" y="0" width="400" height="400"/>
+  <SubTexture name="stun_down_001" x="400" y="400" width="400" height="400"/>
+  <SubTexture name="stun_down_002" x="400" y="800" width="400" height="400"/>
+  <SubTexture name="stun_down_003" x="400" y="1200" width="400" height="400"/>
+  <SubTexture name="stun_down_004" x="400" y="1600" width="400" height="400"/>
+  <SubTexture name="stun_down_005" x="400" y="2000" width="400" height="400"/>
+  <SubTexture name="stun_down_006" x="400" y="2400" width="400" height="400"/>
+  <SubTexture name="stun_down_007" x="400" y="2800" width="400" height="400"/>
+
+  <!-- Column 2: Up -->
+  <SubTexture name="stun_up_000" x="800" y="0" width="400" height="400"/>
+  <SubTexture name="stun_up_001" x="800" y="400" width="400" height="400"/>
+  <SubTexture name="stun_up_002" x="800" y="800" width="400" height="400"/>
+  <SubTexture name="stun_up_003" x="800" y="1200" width="400" height="400"/>
+  <SubTexture name="stun_up_004" x="800" y="1600" width="400" height="400"/>
+  <SubTexture name="stun_up_005" x="800" y="2000" width="400" height="400"/>
+  <SubTexture name="stun_up_006" x="800" y="2400" width="400" height="400"/>
+  <SubTexture name="stun_up_007" x="800" y="2800" width="400" height="400"/>
+
+  <!-- Column 3: Right -->
+  <SubTexture name="stun_right_000" x="1200" y="0" width="400" height="400"/>
+  <SubTexture name="stun_right_001" x="1200" y="400" width="400" height="400"/>
+  <SubTexture name="stun_right_002" x="1200" y="800" width="400" height="400"/>
+  <SubTexture name="stun_right_003" x="1200" y="1200" width="400" height="400"/>
+  <SubTexture name="stun_right_004" x="1200" y="1600" width="400" height="400"/>
+  <SubTexture name="stun_right_005" x="1200" y="2000" width="400" height="400"/>
+  <SubTexture name="stun_right_006" x="1200" y="2400" width="400" height="400"/>
+  <SubTexture name="stun_right_007" x="1200" y="2800" width="400" height="400"/>
+</TextureAtlas>

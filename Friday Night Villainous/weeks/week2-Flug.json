@@ -1,0 +1,50 @@
+{
+	"storyName": "Mad Science",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "school",
+	"weekBefore": "week1-505",
+	"freeplayColor": [
+		175,
+		135,
+		0
+	],
+	"startUnlocked": false,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Conflict of Interest",
+			"flug",
+			[
+				175,
+				135,
+				0
+			]
+		],
+		[
+			"The Electron Shuffle",
+			"flug",
+			[
+				175,
+				135,
+				0
+			]
+		],
+		[
+			"Technical Difficulty",
+			"flug",
+			[
+				175,
+				135,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"pico",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Week Bag"
+}

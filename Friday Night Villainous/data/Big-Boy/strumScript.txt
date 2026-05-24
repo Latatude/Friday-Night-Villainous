@@ -1,0 +1,139 @@
+// Read about FlxGroups here: https://haxeflixel.com/documentation/flxgroup/
+import flixel.group.FlxTypedGroup;
+
+// Variables for Girlfriend's notes
+var gfNotes:Array<Note> = [];
+var gfStrums:Array<StrumNote> = [];
+var ghostNotes:FlxTypedGroup<Note> = new FlxTypedGroup<Note>();
+
+// Somewhat prevents memory leaks until I find a fix :P
+var active:Bool = true;
+
+// Recreation of opponentNoteHit (because ShadowMario made the function private for some reason...)
+function ghostNoteHit(note:Note):Void
+{
+	if (note.noteType == 'Hey!' && game.gf.animOffsets.exists('hey')) {
+		game.gf.playAnim('hey', true);
+		game.gf.specialAnim = true;
+		game.gf.heyTimer = 0.6;
+	}
+
+	else if (!note.noAnimation)
+	{
+		var char:Character = game.gf;
+		var altAnim:String = note.animSuffix;
+		var section = PlayState.SONG.notes[curSection];
+
+		if (section != null)
+			if (section.altAnim && !section.gfSection)
+				altAnim = '-alt';
+
+		var animToPlay:String = game.singAnimations[Std.int(Math.abs(Math.min(game.singAnimations.length - 1, note.noteData)))] + altAnim;
+
+		if(char != null)
+		{
+			char.playAnim(animToPlay, true);
+			char.holdTimer = 0;
+		}
+	}
+
+	note.hitByOpponent = true;
+
+	if (!note.isSustainNote)
+	{
+		note.kill();
+		ghostNotes.remove(note, true);
+		note.destroy();
+	}
+}
+
+function onInit()
+{
+	// Functions for creating the strumline!
+
+	// Creates a new strumline
+	createStrumline("GF Notes");
+
+	// Adds it to the game! Behind Boyfriend!
+	addStrumBehind("bf", "GF Notes");
+
+	// Will need this later!
+	gfStrums = getStrumline("GF Notes");
+
+	// Basic position for your strumline
+	var strumY:Float;
+
+	if (ClientPrefs.data.downScroll)
+		strumY = FlxG.height - 150;
+	else
+		strumY = 50;
+
+	// Code to position the strumline (and then make it hidden)
+	positionStrumline("GF Notes", getStrumlineMidpoint("bf"), strumY); // * .75 means that it will be placed on 75% of the screen
+	setVisible("GF Notes", false);
+
+	// Code to filter out Girlfriend's notes from the rest of notes
+	gfNotes = game.unspawnNotes.filter(
+		(note:Note) -> {
+			if (note.noteType == "GF Notes")
+			{
+				note.rgbShader.r = FlxColor.WHITE;
+				note.copyAlpha = false;
+				note.alpha = 0.3;
+				return true;
+			}
+			return false;
+		}
+	);
+
+	for (note in gfNotes)
+		game.unspawnNotes.remove(note);
+
+	// Adds Girlfriend's notes behind everyone else's
+	game.noteGroup.insert(0, ghostNotes);
+}
+
+function onUpdate(elapsed:Float)
+{
+	if (!active)
+		return;
+
+	if (gfNotes.length > 0)
+	{
+		var note:Note = gfNotes[0];
+		var time:Float = game.spawnTime * playbackRate;
+
+		if(game.songSpeed < 1)
+			time /= game.songSpeed;
+
+		if(note.multSpeed < 1)
+			time /= note.multSpeed;
+
+		while (gfNotes.length > 0 && note.strumTime - Conductor.songPosition < time)
+		{
+			ghostNotes.insert(0, note);
+			note.spawned = true;
+
+			note = gfNotes.shift();
+		}
+	}
+
+	ghostNotes.forEachAlive((note:Note) ->
+	{
+		var strum:StrumNote = gfStrums[note.noteData];
+		note.followStrumNote(strum, Conductor.crochet, game.songSpeed / game.playbackRate);
+
+		if (note.wasGoodHit && !note.hitByOpponent && !note.ignoreNote)
+			ghostNoteHit(note);
+
+		if(note.isSustainNote && strum.sustainReduce)
+			note.clipToStrumNote(strum);
+	});
+
+	// STOP MEMORY LEAKING GRAAAAAH
+	if (gfNotes.length < 1 && ghostNotes.length < 1)
+	{
+		remove(ghostNotes);
+		active = false;
+	}
+}

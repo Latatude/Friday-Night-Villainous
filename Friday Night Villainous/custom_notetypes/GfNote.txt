@@ -1,0 +1,29 @@
+-- GfNote.lua
+
+-- This function is called when the note type is initialized
+function onInit()
+    setProperty('noteType', 'GfNote') -- Set note type to GfNote
+end
+
+-- This function is called when the note is created
+function onCreate()
+    setProperty('alpha', 0.5) -- Set transparency (0 = fully transparent, 1 = fully opaque)
+    setProperty('color', getColorFromHex('FF0000')) -- Set color to reddish (in hexadecimal format)
+    setProperty('ignoreNote', true) -- Ensure the note cannot be hit by the player
+    setProperty('mustPress', false) -- Do not require the player to press this note
+end
+
+-- onUpdate function can be added for handling note behavior each frame if needed
+function onUpdate()
+    -- Code to update note behavior each frame can be added here
+end
+
+-- onHit function can be added to handle what happens when the note is hit (optional)
+function onHit()
+    -- Code to handle note hit behavior (optional)
+end
+
+-- onMiss function can be added to handle what happens when the note is missed (optional)
+function onMiss()
+    -- Code to handle note miss behavior (optional)
+end

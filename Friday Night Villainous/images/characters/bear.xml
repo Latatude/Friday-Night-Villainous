@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bear.png">
+<SubTexture name="bear idle0000" x="355" y="897" width="307" height="428" frameX="-182" frameY="-469" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0001" x="355" y="897" width="307" height="428" frameX="-182" frameY="-469" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0002" x="1334" y="0" width="295" height="414" frameX="-192" frameY="-483" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0003" x="1334" y="0" width="295" height="414" frameX="-192" frameY="-483" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0004" x="967" y="897" width="299" height="424" frameX="-188" frameY="-473" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0005" x="967" y="897" width="299" height="424" frameX="-188" frameY="-473" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0006" x="662" y="897" width="305" height="427" frameX="-183" frameY="-470" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0007" x="662" y="897" width="305" height="427" frameX="-183" frameY="-470" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0008" x="990" y="432" width="308" height="431" frameX="-182" frameY="-466" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0009" x="990" y="432" width="308" height="431" frameX="-182" frameY="-466" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0010" x="319" y="460" width="309" height="432" frameX="-181" frameY="-465" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0011" x="319" y="460" width="309" height="432" frameX="-181" frameY="-465" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0012" x="628" y="460" width="309" height="432" frameX="-181" frameY="-465" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear idle0013" x="628" y="460" width="309" height="432" frameX="-181" frameY="-465" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear left0000" x="0" y="460" width="319" height="437" frameX="-113" frameY="-460" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear left0001" x="0" y="460" width="319" height="437" frameX="-113" frameY="-460" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear left0002" x="658" y="0" width="332" height="439" frameX="-126" frameY="-458" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear left0003" x="658" y="0" width="332" height="439" frameX="-126" frameY="-458" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear up0000" x="0" y="0" width="334" height="460" frameX="-164" frameY="-437" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear up0001" x="0" y="0" width="334" height="460" frameX="-164" frameY="-437" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear up0002" x="334" y="0" width="324" height="448" frameX="-174" frameY="-449" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear up0003" x="334" y="0" width="324" height="448" frameX="-174" frameY="-449" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear down0000" x="0" y="1327" width="314" height="389" frameX="-185" frameY="-508" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear down0001" x="0" y="1327" width="314" height="389" frameX="-185" frameY="-508" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear down0002" x="1629" y="0" width="310" height="405" frameX="-192" frameY="-492" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear down0003" x="1629" y="0" width="310" height="405" frameX="-192" frameY="-492" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear right0000" x="990" y="0" width="344" height="432" frameX="-210" frameY="-465" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear right0001" x="990" y="0" width="344" height="432" frameX="-210" frameY="-465" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear right0002" x="0" y="897" width="355" height="430" frameX="-191" frameY="-467" frameWidth="674" frameHeight="1278" />
+<SubTexture name="bear right0003" x="0" y="897" width="355" height="430" frameX="-191" frameY="-467" frameWidth="674" frameHeight="1278" />
+</TextureAtlas>

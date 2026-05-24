@@ -1,0 +1,50 @@
+{
+	"storyName": "Twisted Sister",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"???",
+			"mom",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"Dem-I-God",
+			"mom",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"Chaos Theory",
+			"mom",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"mom",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Demencia's Week"
+}

@@ -1,0 +1,27 @@
+{
+	"storyName": "Joke Songs",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "week3-Dem",
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Toonix-500",
+			"bear",
+			[
+				0,
+				200,
+				255
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekName": "Joke Songs",
+	"hiddenUntilUnlocked": false
+}

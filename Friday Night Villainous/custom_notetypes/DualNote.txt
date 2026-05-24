@@ -1,0 +1,65 @@
+local SPECIAL_NOTE_TYPE = "DualNote"
+
+-- Function to handle note events
+function onNoteEvent(note, event)
+    if event == "onStep" then
+        local noteType = note:getType()
+        local noteColumn = note:getColumn()
+
+        -- Check if the note type matches our special note type
+        if noteType == SPECIAL_NOTE_TYPE then
+            -- Determine which animations to trigger based on note column
+            local bfAnim = ""
+            local gfAnim = ""
+
+            -- Assign animations based on note column
+            if noteColumn == 0 then
+                bfAnim = "singLEFT"
+                gfAnim = "singLEFT"
+            elseif noteColumn == 1 then
+                bfAnim = "singDOWN"
+                gfAnim = "singDOWN"
+            elseif noteColumn == 2 then
+                bfAnim = "singUP"
+                gfAnim = "singUP"
+            elseif noteColumn == 3 then
+                bfAnim = "singRIGHT"
+                gfAnim = "singRIGHT"
+            end
+
+            -- Trigger BF's animation
+            bfNoteAnimation(bfAnim)
+
+            -- Trigger GF's animation
+            gfNoteAnimation(gfAnim)
+        end
+    elseif event == "onMiss" then
+        local noteType = note:getType()
+
+        -- Check if the note type matches our special note type
+        if noteType == SPECIAL_NOTE_TYPE then
+            -- Trigger BF's miss animation with health drain
+            bfNoteMiss()
+        end
+    end
+end
+
+-- Function to trigger BF's note animation
+function bfNoteAnimation(animationName)
+    -- Replace with your logic to trigger BF's animation
+    print("Triggering BF animation: " .. animationName)
+end
+
+-- Function to trigger GF's note animation
+function gfNoteAnimation(animationName)
+    -- Replace with your logic to trigger GF's animation
+    print("Triggering GF animation: " .. animationName)
+end
+
+-- Function to trigger BF's miss animation with health drain
+function bfNoteMiss()
+    -- Replace with your logic to trigger BF's miss animation and health drain
+    print("Triggering BF miss animation and health drain")
+end
+
+return onNoteEvent

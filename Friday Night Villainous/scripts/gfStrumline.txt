@@ -1,0 +1,27 @@
+-- gfStrumline.lua
+
+function onCreate()
+    -- Create Girlfriend's strumline
+    for i = 0, 3 do
+        makeLuaSprite('gfStrum'..i, 'noteAssets', getPropertyFromClass('flixel.FlxG', 'width') / 2 + (i * 112) - 170, getPropertyFromClass('flixel.FlxG', 'height') - 150)
+        setObjectCamera('gfStrum'..i, 'hud')
+        setProperty('gfStrum'..i..'.alpha', 0.5) -- Make it transparent
+        addLuaSprite('gfStrum'..i, true)
+    end
+end
+
+function onUpdatePost(elapsed)
+    -- Sync Girlfriend's strumline with game timing
+    for i = 0, getProperty('notes.length') - 1 do
+        if getPropertyFromGroup('notes', i, 'noteType') == 'GfNote' then
+            local strumLineNote = getPropertyFromGroup('notes', i, 'strumTime')
+            local isSustain = getPropertyFromGroup('notes', i, 'isSustainNote')
+            local notePos = getPropertyFromGroup('notes', i, 'x')
+            local noteAlpha = getPropertyFromGroup('notes', i, 'alpha')
+            local noteColor = getPropertyFromGroup('notes', i, 'color')
+
+            setPropertyFromGroup('notes', i, 'x', notePos)
+            setPropertyFromGroup('notes', i, 'alpha', 0.5)
+        end
+    end
+end

@@ -1,0 +1,123 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "toonix bf idle"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "toonix bf left"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "toonix bf missL"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "toonix bf down"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "toonix bf missD"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "toonix bf up"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "toonix bf missU"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "toonix bf right"
+		},
+		{
+			"offsets": [
+				5,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "toonix bf missR"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/toonix-bf",
+	"position": [
+		-90,
+		-150
+	],
+	"healthicon": "toonbf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		40,
+		60
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

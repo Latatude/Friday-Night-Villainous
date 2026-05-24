@@ -1,0 +1,32 @@
+{
+	"storyName": "Evil Service",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "halloween",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Phonecall",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"pico",
+		"dad",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Prologue"
+}

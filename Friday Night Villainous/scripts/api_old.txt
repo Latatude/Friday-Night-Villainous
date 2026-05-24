@@ -1,0 +1,306 @@
+import haxe.ds.StringMap;
+import haxe.io.Path;
+import objects.StrumNote;
+import psychlua.HScript;
+import states.editors.ChartingState;
+
+var swagWidth:Float = 160;
+
+var scripts:Array<HScript> = [];
+
+var strumlineOrder:Array<String> = [];
+var strumlineData:StringMap<{strumline:Array<StrumNote>, char:Character}> = [];
+
+function createStrumData(name:String, strumline:Array<StrumNote>, ?char:Character):Void
+{
+	strumlineData.set(
+		name,
+		{
+			strumline: strumline,
+			char: char
+		}
+	);
+}
+
+function getStrumline(name:String):Array<StrumNote>
+{
+	return strumlineData.get(name).strumline;
+}
+
+function getCharacter(name:String):Character
+{
+	return strumlineData.get(name).char;
+}
+
+function positionStrum(spr:StrumNote, pos:Float):Float
+{
+	return pos - spr.width/2 + (swagWidth * spr.scale.x * (spr.noteData - 1.5));
+}
+
+function positionStrumline(name:String, ?X:Float, ?Y:Float):Void {
+	for (strum in getStrumline(name))
+	{
+		strum.setPosition(positionStrum(strum, X), Y ?? strum.y);
+	}
+}
+
+function moveStrumline(strumLine:String, ?X:Float, ?Y:Float, ?time:Float, ?ease:FlxEase):Void {
+	if (time == 0)
+	{
+		positionStrumline(strumLine, X, Y);
+		return;
+	}
+
+	for (strum in getStrumline(strumLine))
+	{
+		var toX:Float = (X == null) ? strum.x : positionStrum(strum, X);
+		FlxTween.tween(strum, {x: toX, y: Y ?? strum.y}, time, {ease:ease});
+	}
+}
+
+function getAnim(name:String, state:String):Array<Float>
+{
+	switch (name)
+	{
+		case "left":
+			return switch (state) {
+				// default - Preparing Animation, "start" - Start Animation, "end" - End Animation
+				default: [FlxG.width * 0.25, FlxG.width * 0.75, -250];
+				case "start": [FlxG.width/2, FlxG.width*0.825, FlxG.width*0.175];
+			}
+		case "right":
+			return switch (state) {
+				// default - Preparing Animation, "start" - Start Animation, "end" - End Animation
+				default: [FlxG.width * 0.25, FlxG.width * 0.75, FlxG.width + 250];
+				case "start": [FlxG.width*0.175, FlxG.width*0.5, FlxG.width*0.825];
+			}
+		// case "fourthTest":
+		// 	return switch (state) {
+		// 		default: [FlxG.width * 0.25, FlxG.width * 0.75, FlxG.width + 250, FlxG.width + 500];
+		// 		case "start": [FlxG.width*0.125, FlxG.width*0.375, FlxG.width*0.625, FlxG.width*0.875];
+		// 	}
+	}
+}
+
+function triggerAnimation(name:String, state:String, ?ease:FlxEase):Void {
+	ease ?? FlxEase.linear;
+
+	var anims:Array<Float> = getAnim(name, state);
+	var t:Float = (state == "prepare") ? 0. : 1.;
+
+	moveStrumline("dad", anims.shift(), null, t, ease);
+	moveStrumline("bf", anims.shift(), null, t, ease);
+
+	for (i in 0...anims.length)
+	{
+		// Breaks the code if there is no more strumlines
+		if (strumlineOrder.length < i)
+			break;
+
+		moveStrumline(strumlineOrder[i], anims.shift(), null, t, ease);
+	}
+}
+
+function initScript(script:HScript):HScript
+{
+	script.set("triggerAnimation", triggerAnimation);
+
+	script.set("createStrumline", function(name:String, ?char:Character):Array<StrumNote> {
+		var strumNotes:Array<StrumNote> = [];
+
+		for (i in 0...4)
+		{
+			var strum:StrumNote = new StrumNote(0, 0, i, 0);
+			strum.ID = i;
+			strum.downScroll = ClientPrefs.data.downScroll;
+			strum.playAnim("static");
+			strumNotes.push(strum);
+		}
+
+		createStrumData(name, strumNotes, char);
+		strumlineOrder.push(name);
+
+		// AUTOMATIC NOTE TYPE DETECTION!! HELL YEAH!!!
+		ChartingState.noteTypeList.push(name);
+
+		return strumNotes;
+	});
+
+	script.set("addStrumline", function(name:String, ?isPlayer:Bool):Void {
+		var i:Int = 0;
+		for (strum in getStrumline(name))
+		{
+			if (!PlayState.isStoryMode && !game.skipArrowStartTween)
+			{
+				strum.alpha = 0;
+				FlxTween.tween(strum, {alpha: 1}, 1, {ease: FlxEase.circOut, startDelay: 0.5 + (0.2 * i++)});
+			}
+
+			if (isPlayer ?? false)
+				game.playerStrums.add(strum);
+			else
+				game.opponentStrums.add(strum);
+
+			game.strumLineNotes.add(strum);
+		}
+	});
+
+	script.set("addStrumBehind", function(strum:String, name:String, ?isPlayer:Bool):Void {
+		var strumIDX:Int = game.strumLineNotes.members.indexOf(getStrumline(strum)[0]);
+
+		var i:Int = 0;
+		for (strum in getStrumline(name))
+		{
+			if (!PlayState.isStoryMode && !game.skipArrowStartTween)
+			{
+				strum.alpha = 0;
+				FlxTween.tween(strum, {alpha: 1}, 1, {ease: FlxEase.circOut, startDelay: 0.5 + (0.2 * i++)});
+			}
+
+			if (isPlayer ?? false)
+				game.playerStrums.add(strum);
+			else
+				game.opponentStrums.add(strum);
+
+			game.strumLineNotes.insert(strumIDX, strum);
+		}
+	});
+
+	script.set("getStrumline", getStrumline);
+	script.set("positionStrumline", positionStrumline);
+	script.set("moveStrumline", moveStrumline);
+
+	script.set("assignCharacter", (name:String, char:Character) -> strumlineData.get(name).char = char);
+
+	script.set("removeStrumline", function(name:String):Void {
+		for (strum in getStrumline(name))
+			game.strumLineNotes.remove(strum, true);
+	});
+
+	script.set("setVisible", (name:String, value:Bool) -> {
+		for (strum in getStrumline(name))
+			strum.visible = value;
+	});
+
+	script.set("scaleNotes", function(size:Float):Void {
+		for (strum in game.strumLineNotes)
+		{
+			strum.scale.set(size, size);
+			strum.updateHitbox();
+		}
+
+		for (note in game.unspawnNotes)
+		{
+			if (note.isSustainNote)
+				note.offsetX *= (size/note.scale.x);
+			else
+				note.scale.y = size;
+
+			note.scale.x = size;
+			note.updateHitbox();
+		}
+	});
+
+	script.set("setStrumLineOrder", (order:Array<String>) -> strumlineOrder = order);
+	
+	script.set("getStrumlineMidpoint", function (name:String):Float {
+		var strumline:Array<StrumNote> = getStrumline(name);
+
+		var first:StrumNote = strumline[0];
+		var last:StrumNote = strumline[strumline.length - 1];
+
+		return (first.x + (last.x + last.width)) * 0.5;
+	});
+
+	scripts.push(script);
+
+	return script; // The most USELESS line of code ever but anyways :P
+}
+
+function callEvent(eventName:String, ?args:Array<Dynamic>)
+{
+	for (script in scripts)
+	{
+		if (script == null || !script.exists(eventName))
+			continue;
+		script.call(eventName, args);
+	}
+}
+
+function getScriptName(name:String):String
+{
+	var path:Path = new Path(name);
+	path.dir = null;
+	path.ext = null;
+	return path.toString();
+}
+
+function onCreatePost()
+{
+	ChartingState.noteTypeList = [
+		'',
+		'Alt Animation',
+		'Hey!',
+		'Hurt Note',
+		'GF Sing',
+		'No Animation'
+	];
+
+	// The reason we copy the array is because we don't wanna reference
+	// these strumlines. If we did reference them then it would count
+	// the strums that were added AFTER these ones.
+
+	createStrumData("dad", game.opponentStrums.members.copy());
+	createStrumData("bf", game.playerStrums.members.copy());
+
+	for (script in game.hscriptArray)
+	{
+		var name:String = getScriptName(script.origin);
+		if (StringTools.startsWith(name, "strumScript"))
+			initScript(script);
+	}
+
+	if (scripts.length < 1) // Destroy the script if there's no strumline scripts available (performance reasons)
+	{
+		game.hscriptArray.remove(this);
+		this.destroy();
+		return;
+	}
+
+	callEvent("onInit");
+
+	for (note in game.unspawnNotes)
+	{
+		if (strumlineData.exists(note.noteType))
+		{
+			var myStrum:StrumNote = getStrumline(note.noteType)[note.noteData];
+			note.mustPress = game.playerStrums.members.indexOf(myStrum) > -1;
+			var strumLine = note.mustPress ? game.playerStrums : game.opponentStrums;
+			note.noteData = strumLine.members.indexOf(myStrum);
+
+			note.noAnimation = true;
+		}
+	}
+}
+
+function onEvent(name:String, v1:String, v2:String)
+{
+	if (name == "Play Strumline Anim")
+		triggerAnimation(v1, v2, FlxEase.sineInOut);
+}
+
+function opponentNoteHit(note:Note)
+{
+	if (strumlineData.exists(note.noteType))
+	{
+		var char:Character = getCharacter(note.noteType);
+
+		if (char != null)
+		{
+			char.playAnim(game.singAnimations[note.noteData % 4], true);
+			char.holdTimer = 0;
+		}
+
+		callEvent("strumNoteHit", [note]);
+	}
+}

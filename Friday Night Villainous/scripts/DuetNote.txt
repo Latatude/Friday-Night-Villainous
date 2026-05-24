@@ -1,0 +1,112 @@
+import flixel.FlxG;
+import flixel.group.FlxTypedGroup;
+import playstate.PlayState;
+import objects.Note;
+
+// Variables for storing notes
+var bfNotes:FlxTypedGroup<Note>;
+var gfNotes:FlxTypedGroup<Note>;
+
+// Initialization function
+function initializeDuetNote():Void {
+    bfNotes = new FlxTypedGroup<Note>();
+    gfNotes = new FlxTypedGroup<Note>();
+
+    // Check if PlayState.instance is valid before adding listeners
+    if (PlayState.instance != null) {
+        // Add listeners to handle game events
+        PlayState.instance.onUpdatePost.add(onUpdate);
+        PlayState.instance.onCreatePost.add(onCreatePost);
+    } else {
+        trace("PlayState.instance is null or undefined when initializing DuetNote functionality.");
+    }
+}
+
+// Function to handle note creation on game start
+function onCreatePost():Void {
+    bfNotes.clear();
+    gfNotes.clear();
+
+    // Iterate through unspawned notes and categorize them into bfNotes and gfNotes
+    for (note in PlayState.instance.unspawnNotes) {
+        if (note.noteType == 'DuetNote') {
+            if (note.mustPress) {
+                bfNotes.add(note);
+            } else {
+                gfNotes.add(note);
+            }
+        }
+    }
+
+    // Add bfNotes and gfNotes to the PlayState instance
+    PlayState.instance.add(bfNotes);
+    PlayState.instance.add(gfNotes);
+}
+
+// Function to handle note updates during gameplay
+function onUpdate(elapsed:Float):Void {
+    // Process bfNotes for good hits
+    for (note in bfNotes) {
+        if (note.wasGoodHit) {
+            goodNoteHit(note, note.noteData, note.isSustainNote);
+            note.kill();
+        }
+    }
+
+    // Process gfNotes for misses
+    for (note in gfNotes) {
+        if (!note.wasGoodHit) {
+            noteMiss(note, note.noteData, note.isSustainNote);
+            note.kill();
+        }
+    }
+}
+
+// Function to handle actions when a note is hit correctly
+function goodNoteHit(note:Note, direction:Int, isSustainNote:Bool):Void {
+    PlayState.instance.boyfriend.playAnim(getBFAnimName(direction), true);
+    PlayState.instance.gf.playAnim(getGFAnimName(direction), true);
+}
+
+// Function to handle actions when a note is missed
+function noteMiss(note:Note, direction:Int, isSustainNote:Bool):Void {
+    PlayState.instance.boyfriend.playAnim('miss' + getDirectionName(direction), true);
+    PlayState.instance.gf.playAnim(getGFAnimName(direction), true);
+    PlayState.instance.health -= 0.2;
+}
+
+// Function to retrieve the animation name for Boyfriend based on direction
+function getBFAnimName(direction:Int):String {
+    switch (direction) {
+        case 0: return 'singLEFT';
+        case 1: return 'singDOWN';
+        case 2: return 'singUP';
+        case 3: return 'singRIGHT';
+        default: return '';
+    }
+}
+
+// Function to retrieve the animation name for Girlfriend based on direction
+function getGFAnimName(direction:Int):String {
+    switch (direction) {
+        case 0: return 'singLEFT';
+        case 1: return 'singDOWN';
+        case 2: return 'singUP';
+        case 3: return 'singRIGHT';
+        default: return '';
+    }
+}
+
+// Function to retrieve the direction name
+function getDirectionName(direction:Int):String {
+    switch (direction) {
+        case 0: return 'LEFT';
+        case 1: return 'DOWN';
+        case 2: return 'UP';
+        case 3: return 'RIGHT';
+        default: return '';
+    }
+}
+
+// Initialize the DuetNote functionality
+initializeDuetNote();

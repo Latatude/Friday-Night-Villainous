@@ -1,0 +1,59 @@
+import openfl.media.Sound;
+
+var zap:Sound = Paths.sound("zap");
+var shot:Sound = Paths.sound("shot");
+
+function doSequence(note:Note)
+{
+    if (note.isSustainNote || note.noteType != "stun")
+        return;
+    
+    if (note.wasGoodHit)
+    {
+        game.boyfriend.playAnim("hurt", true);
+        game.boyfriend.specialAnim = true;
+        FlxG.sound.play(zap);
+    }
+
+    FlxG.sound.play(shot);
+    game.dad.playAnim("shoot", true);
+    game.dad.specialAnim = true;
+}
+
+for (note in game.unspawnNotes)
+{
+    if (note.noteType == "stun")
+    {
+        if (note.rgbShader != null) {
+            note.rgbShader.enabled = false;
+        }
+        note.texture = "mechanics/stun";
+        note.noteSplashData.texture = "mechanics/stunSplash";
+        
+        note.missHealth = 0;
+        note.hitHealth = 0;
+        note.hitCausesMiss = true;
+    }
+}
+
+function goodNoteHit(note:Note)
+{
+    if (note.noteType == "stun")
+    {
+        doSequence(note);
+        note.rating = 'miss';
+        note.ratingMod = 0;
+        return;
+    }
+}
+
+function noteMiss(note:Note)
+{
+    if (note.noteType == "stun")
+    {
+        doSequence(note);
+        game.boyfriend.playAnim("dodge", true);
+        note.ratingDisabled = true;
+        return;
+    }
+}

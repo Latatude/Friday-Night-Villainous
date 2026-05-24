@@ -1,0 +1,169 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				0
+			],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "girlfriend evil hey",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "girlfriend evil left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-8
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "girlfriend evil down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-2
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "girlfriend evil up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-6
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "girlfriend evil right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-8
+			],
+			"anim": "sad",
+			"fps": 24,
+			"name": "girlfriend evil sad",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-4
+			],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "girlfriend evil idle",
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-4
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "girlfriend evil idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				3,
+				-4
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "girlfriend evil idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/evil girlfriend",
+	"position": [
+		-50,
+		-25
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		185,
+		0,
+		77
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,14 @@
+import flixel.FlxG;
+import flixel.group.FlxTypedGroup;
+import playstate.PlayState;
+import objects.Note;
+
+// Initialization function
+function initializeBigBoyDuetNote():Void {
+    // Your initialization logic here
+}
+
+// Other functions specific to Big Boy Duet Note can be defined similarly
+
+// Initialize the Big Boy Duet Note functionality
+initializeBigBoyDuetNote();

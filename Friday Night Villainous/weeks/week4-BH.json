@@ -1,0 +1,32 @@
+{
+	"storyName": "Hat Honcho",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "tank",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Sombrero",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"tankman",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Black Hat's Week"
+}

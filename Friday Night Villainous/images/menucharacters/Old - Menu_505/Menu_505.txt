@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Menu_505.png">
+<SubTexture name="Menu_505 dance0000" x="0" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0001" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0002" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0003" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0004" x="545" y="820" width="539" height="773" frameX="-49" frameY="-48" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0005" x="545" y="820" width="539" height="773" frameX="-49" frameY="-48" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0006" x="545" y="820" width="539" height="773" frameX="-49" frameY="-48" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0007" x="545" y="820" width="539" height="773" frameX="-49" frameY="-48" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0008" x="1076" y="0" width="539" height="798" frameX="-44" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0009" x="1076" y="0" width="539" height="798" frameX="-44" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0010" x="1076" y="0" width="539" height="798" frameX="-44" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0011" x="1076" y="0" width="539" height="798" frameX="-44" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0012" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0013" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0014" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0015" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0016" x="0" y="820" width="545" height="778" frameX="-22" frameY="-43" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0017" x="0" y="820" width="545" height="778" frameX="-22" frameY="-43" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0018" x="0" y="820" width="545" height="778" frameX="-22" frameY="-43" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0019" x="0" y="820" width="545" height="778" frameX="-22" frameY="-43" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0020" x="1615" y="0" width="542" height="798" frameX="-28" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0021" x="1615" y="0" width="542" height="798" frameX="-28" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0022" x="1615" y="0" width="542" height="798" frameX="-28" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0023" x="1615" y="0" width="542" height="798" frameX="-28" frameY="-23" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0024" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0025" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0026" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0027" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0028" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+<SubTexture name="Menu_505 dance0029" x="538" y="0" width="538" height="820" frameX="-37" frameY="-1" frameWidth="612" frameHeight="822" />
+</TextureAtlas>

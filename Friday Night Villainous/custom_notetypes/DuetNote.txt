@@ -1,0 +1,56 @@
+function onCreate()
+    -- Create custom note type
+    setPropertyFromClass('Note', 'customNotes.duetNote', true)
+end
+
+
+function goodNoteHit(id, direction, noteType, isSustainNote)
+    if noteType == 'DuetNote' then
+        playCharacterAnim('boyfriend', getBFAnimName(direction), true)
+        playCharacterAnim('gf', getGFAnimName(direction), true)
+    end
+end
+
+function noteMiss(id, direction, noteType, isSustainNote)
+    if noteType == 'DuetNote' then
+        playCharacterAnim('boyfriend', 'miss'..getDirectionName(direction), true)
+        playCharacterAnim('gf', getGFAnimName(direction), true)
+        setProperty('health', getProperty('health') - 0.2)
+    end
+end
+
+function getBFAnimName(direction)
+    if direction == 0 then
+        return 'singLEFT'
+    elseif direction == 1 then
+        return 'singDOWN'
+    elseif direction == 2 then
+        return 'singUP'
+    elseif direction == 3 then
+        return 'singRIGHT'
+    end
+end
+
+function getGFAnimName(direction)
+    if direction == 0 then
+        return 'singLEFT'
+    elseif direction == 1 then
+        return 'singDOWN'
+    elseif direction == 2 then
+        return 'singUP'
+    elseif direction == 3 then
+        return 'singRIGHT'
+    end
+end
+
+function getDirectionName(direction)
+    if direction == 0 then
+        return 'LEFT'
+    elseif direction == 1 then
+        return 'DOWN'
+    elseif direction == 2 then
+        return 'UP'
+    elseif direction == 3 then
+        return 'RIGHT'
+    end
+end

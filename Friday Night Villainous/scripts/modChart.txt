@@ -1,0 +1,8 @@
+-- modChart.lua
+
+function onCreate()
+    -- Load the gfStrumline script
+    runHaxeCode([[
+        game.callOnLuas("loadScript", ["gfStrumline.lua"]);
+    ]])
+end

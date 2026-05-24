@@ -1,0 +1,100 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Correct.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.02,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "[Inaudible voice on phone]"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Oh, no. No need to overkill.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.02,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "[More inaudible phone voice]"
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"I suggest you hide under the cover of night. That would make it easier.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.02,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "[Inaudible question on phone]"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Threat level? Hmph, not that high.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"He's a small lad, so I don't think much effort is needed.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.02,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "[Inaudible talking on phone]"
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "\"Yes. Yeah, I'm fine with that.\""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "*thinks* I wonder what that's all about?"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "lat",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Girlfriend thinks for a bit, but shrugs it off and goes back to what she was doing, remaining diligent."
+		}
+	]
+}
