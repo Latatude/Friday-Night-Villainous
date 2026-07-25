@@ -49,7 +49,6 @@ function onTimerCompleted(tag)
         characterPlayAnim('gf', 'preScratch', true)
     elseif tag == 'playDodgeAnim' and dodgeSuccessful then
         -- Play BF's dodge animation after the same delay as the miss sequence
-        triggerEvent("Play Animation", "dodge", "bf")
         characterPlayAnim('boyfriend', 'dodge', true)
     elseif tag == 'playHurt' then
         -- Drain health and play BF’s hurt animation simultaneously
