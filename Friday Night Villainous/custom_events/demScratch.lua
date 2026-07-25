@@ -21,7 +21,7 @@ function onEvent(name, value1)
 end
 
 -- Player hits the dodge key
-function onUpdate()
+function onUpdate(elapsed)
     if inDodgeWindow and getPropertyFromClass('flixel.FlxG', 'keys.justPressed.' .. dodgeKey:upper()) then
         dodgeSuccessful = true -- Mark dodge as successful
         inDodgeWindow = false -- Disable further attempts
@@ -34,7 +34,7 @@ function onUpdate()
 end
 
 -- Handle timer completions
-function onTimerCompleted(tag)
+function onTimerCompleted(tag, loops, loopsLeft)
     if tag == 'endDodgeWindow' then
         inDodgeWindow = false -- Disable dodge window once time is up
 
