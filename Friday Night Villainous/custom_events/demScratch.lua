@@ -10,9 +10,10 @@ function onEvent(name, value1)
         dodgeSuccessful = false -- Reset dodge success status
         inDodgeWindow = true -- Set dodge window active
 
-        -- Play pre-scratch animation as a warning
-        characterPlayAnim('gf', 'preScratch', true) 
-        runTimer('preScratchLoop', 0.1, dodgeWindow * 10) -- Loop pre-scratch animation
+        -- Play pre-scratch animation + sound as a warning
+        characterPlayAnim('gf', 'preScratch', true)
+        playSound('warning', 1)
+        runTimer('preScratchLoop', 0.1, math.floor(dodgeWindow * 10)) -- Loop pre-scratch animation
 
         -- Set a timer to end the dodge window
         runTimer('endDodgeWindow', dodgeWindow)
@@ -25,8 +26,9 @@ function onUpdate()
         dodgeSuccessful = true -- Mark dodge as successful
         inDodgeWindow = false -- Disable further attempts
 
-        -- Immediately play GF’s scratch animation
-        characterPlayAnim('gf', 'scratch', true) 
+        -- Immediately play GF’s scratch animation and swish sound
+        characterPlayAnim('gf', 'scratch', true)
+        playSound('swish', 1)
         runTimer('playDodgeAnim', 0.1) -- Schedule BF's dodge animation to play after a slight delay
     end
 end
@@ -36,9 +38,10 @@ function onTimerCompleted(tag)
     if tag == 'endDodgeWindow' then
         inDodgeWindow = false -- Disable dodge window once time is up
 
-        -- If no successful dodge, play GF’s scratch animation
+        -- If no successful dodge, play GF’s scratch animation + sound
         if not dodgeSuccessful then
             characterPlayAnim('gf', 'scratch', true) -- Play scratch animation
+            playSound('scratch', 1) -- Play hit sound
             runTimer('playHurt', 0.1) -- Schedule health drain and hurt animation after 0.1 seconds
         end
     elseif tag == 'preScratchLoop' and inDodgeWindow then
